@@ -19,17 +19,17 @@ fun main(args: Array<String>) {
 
 
             if ((year > 0) && (year % 100 != 0)) {
-                century = (year - 1) / 100
+                century = ((year-1) / 100)+1
                 println("$year is $century century AD")
 
             } else {
                 if ((year > 0) && (year % 100 == 0)) {
-                    century = (year) / 100
+                    century = ((year-1) / 100)+1
                     println("$year is $century century AD")
                 }
             }
             if ((year < 0) && (year % 100 != 0)) {
-                century = (year - 1) / 100
+                century = ((year-1) / 100)+1
                 println("$year is $century century BC")
             } else {
                 if ((year < 0) && (year % 100 == 0)) {
