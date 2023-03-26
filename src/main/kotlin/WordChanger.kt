@@ -1,11 +1,11 @@
 fun main(){
-    var input = readln()
+    val input = readln()
     var mod=false
     for (item in input){
-        if(item.equals('-')||item.equals('_')){
+        if(item == '-' || item == '_'){
             mod=true
         }else{
-            if(mod==true){
+            if(mod){
                 print(item.uppercaseChar())
                 mod=false
             }else {

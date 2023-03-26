@@ -2,10 +2,10 @@ import kotlin.math.absoluteValue
 
 
 
-fun main(args: Array<String>) {
-    var year = 0
-    var century = 0
-    var input = ""
+fun main() {
+    var year: Int
+    var century: Int
+    var input: String
 
     for(i in 1..100) {
         println("Enter Year")
